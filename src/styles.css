@@ -1,0 +1,5 @@
+
+.form-control.ng-toched.ng-invalid
+{
+ border: 2px solid red ;
+}

@@ -1,0 +1,17 @@
+
+<h4>Hello <i>{{info.username}}</i>, your login history is below.</h4>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+          <ol>
+          <li
+        *ngFor="let time of times"
+      >{{ time }}</li>
+
+        </ol>
+        <hr>
+        <!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>-->
+        <!--<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>-->
+      </div>
+    </div>
+  </div>

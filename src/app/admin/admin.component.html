@@ -1,0 +1,37 @@
+<h3>Hello admin, <i>{{info.username}}</i></h3>
+
+<h4>Currently Registered users:</h4>
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+          <ol>
+          <li
+        *ngFor="let reg of registered"
+      >{{ reg }}</li>
+
+        </ol>
+        <hr>
+        <!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>-->
+        <!--<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>-->
+      </div>
+    </div>
+  </div>
+
+<h4>Currently logged-in users: </h4>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+          <ol>
+          <li
+        *ngFor="let log of loggedIns"
+      >{{ log }}</li>
+
+        </ol>
+        <hr>
+        <!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>-->
+        <!--<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>-->
+      </div>
+    </div>
+  </div>
+
